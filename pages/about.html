@@ -29,10 +29,38 @@
         footer{
             background-color: orange;
         }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+            border: 15px solid orange;
+            border-top: 5px solid orange;
+            border-collapse: collapse;
+        }
+        table th {
+            font-weight: bold;
+            padding: 5px;
+            background: orange;
+            border: none;
+            border-bottom: 5px solid orange;
+        }
+        table td {
+            padding: 5px;
+            border: none;
+            border-bottom: 5px solid orange;
+        }
+        div{
+            font-size: 18pt;
+            color: black;
+            padding: 10px;
+            border-color: orange;
+            background-color: rgb(247, 227, 116);
+            border-style:double;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <!--Навигация по сайту-->
+    <header style="width: 50%;">
         <a href="../index.html">
             <svg width="25px" height="25px" viewBox="0 0 512 512">
             <style type="text/css">
@@ -45,20 +73,64 @@
             </g>
             </svg>
         </a>
-        <a href="#">about</a>
-        <a href="contacts.html">contacts</a>
+        <a href="#">Обо мне</a>
+        <a href="contacts.html">Контакты</a>
     </header>
-    <main>
-        <h1>about</h1>
-
+    <!--Основной блок-->
+    <main style="width: 50%;">
         <section>
-                <h1>*****</h1>
-                <p>*****</p>
+            <!--Таблица с техническими характеристиками-->
+            <h2>Технические характеристики:</h2>
+            <table>
+                <tr>
+                    <td><b>Наименование</b></td>
+                    <td>Zigy0ygiZ</td>
+                </tr>
+                <tr>
+                    <td><b>Вид</b></td>
+                    <td>Человек разумный</td>
+                </tr>
+                <tr>
+                    <td><b>Возраст</b></td>
+                    <td>18+</td>
+                </tr>
+                <tr>
+                    <td><b>Пол</b></td>
+                    <td>Женский</td>
+                </tr>
+                <tr>
+                    <td><b>Рост</b></td>
+                    <td>170</td>
+                </tr>
+                <tr>
+                    <td><b>Вес</b></td>
+                    <td>Приемлемый</td>
+                </tr>
+            </table>
+        </section>
+        <section style="margin-bottom: 10px;">
+            <!--Блоки с навыками-->
+            <h2>Навыки и умения:</h2>
+            <p>Данный персонаж обладает исключительной способностью к саморазвитию. 
+                При необходимости легко приобретает новые навыки и прокачивает старые.
+                Об уровне владения мы умолчим, ведь он постоянно повышается, а этот web-сайт статичен 
+                и не способен постоянно обновлять информацию.
+            </p>
+            <section style="display: table-row">
+                <div style="display: table-cell;">HTML</div>
+                <div style="display: table-cell;">Java Script</div>
+                <div style="display: table-cell;">C++</div>
+                <div style="display: table-cell;">C#</div>
+                <div style="display: table-cell;">1C</div>
+                <div style="display: table-cell;">Markdown</div>
+                <div style="display: table-cell;">SQL</div>
+                <div style="display: table-cell;">Pascal</div>
+            </section>
         </section>
     </main>
 
-    <footer>
-        **********
+    <footer style="width: 50%;">
+        <span>&copy;&nbsp;2023 Zigy0ygiZ</span>
     </footer>
 </body>
 </html>
